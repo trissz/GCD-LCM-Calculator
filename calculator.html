@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc_style.css">
+    <script type="text/javascript" src="calc_script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="flag_container">
+            <div class="flag_element_container"><button class="flag hu_flag" onclick="setupLabels('hu');"></button></div>
+            <div class="flag_element_container"><button class="flag en_flag" onclick="setupLabels('en');"></button></div>
+        </div>
+        <div id="definition_page_reference_container"><a id="definition_link" href="definition.html"></a></div>
+    </div>
+    
+    <div id="noi_container"><div id="noi"></div><input id="number_of_inputs" type="number" value="2" min="1"></div>
+    <button id="init_btn" onclick="init();"></button><hr>
+    <div id="input_container"></div><br>
+    <div id="output_container"></div><br>
+
+    <script>
+
+        setupLabels('hu');
+
+    </script>
+</body>
+</html>

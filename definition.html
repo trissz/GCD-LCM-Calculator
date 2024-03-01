@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="def_style.css">
+    <script type="text/javascript" src="def_script.js"></script>
+    <title>Definitions</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="flag_container">
+            <div class="flag_element_container"><button class="flag hu_flag" onclick="setupLabels('hu');"></button></div>
+            <div class="flag_element_container"><button class="flag en_flag" onclick="setupLabels('en');"></button></div>
+        </div>
+        <div class="definition_container">
+            <button id="defgcd" onclick="showDefinitionOfGCD();"></button>
+            <button id="deflcm" onclick="showDefinitionOfLCM();"></button>
+            <button id="defnof" onclick="showDefinitionOfNOF();"></button>
+        </div>
+        <div id="calculator_page_reference_container"><a id="calculator_link" href="calculator.html"></a></div>
+    </div>
+
+    <div id="definition_output_container"></div>
+
+    <script>
+
+        setupLabels('hu');
+
+    </script>
+    
+</body>
+</html>
